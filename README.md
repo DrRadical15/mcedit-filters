@@ -1,4 +1,4 @@
-mcedit-filters
+MCEdit Filters
 ==============
 
 Accredit me as well as anyone else I mention in the comments of the filter if sharing my filters. You may edit and share these filters as long as you acreddit the people mentioned in the script as well as me.

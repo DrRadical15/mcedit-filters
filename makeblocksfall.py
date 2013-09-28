@@ -26,7 +26,7 @@ def perform(level, box, options):
 	for x in xrange(box.minx, box.maxx):
 		for y in xrange(box.miny, box.maxy):
 			for z in xrange(box.minz, box.maxz):
-				if level.blockAt(x,y,z) == ID_fall and (level.blockAt(x,y-1,z) == data_fall or anyData_fall == True):
+				if level.blockAt(x,y,z) == ID_fall and (level.blockAt(x,y-1,z) == data_fall or anyData_fall == True) and level.blockAt(x,y-1,z) == block_through and level.blockDataAt(x,y-1,z) == data_through:
 					Y = y - 1
 					while level.blockAt(x,Y,z) == ID_through and (level.blockDataAt(x,Y,z) == data_through or anyData_through):
 						Y += -1
